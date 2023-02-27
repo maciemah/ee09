@@ -1,0 +1,8 @@
+zapytanie 1: SELECT nazwa, ilosc,opis,cena,zdjecie FROM `produkty` WHERE Rodzaje_id = 1 or Rodzaje_id =2
+zapytanie 4:
+
+Zapytanie 4: wstawiające wiersz do tabeli Produkty według specyfikacji:
+‒ klucz główny nadany automatycznie
+‒ Rodzaje_id – id wiersza z nazwą owoce w tabeli Rodzaje
+‒ Producenci_id – id wiersza z nazwą warzywa-rolnik w tabeli Producenci
+‒ pozostałe dane: nazwa: owoc1, ilość: 10, opis: puste pole, cena: 9,99, zdjecie: owoce.jpg 

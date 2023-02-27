@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+    <link rel="stylesheet" href="styl7.css">
+</head>
+<body>
+    <div id="baner">
+        <h2>Galeria miejsc ciekawych</h2>
+    </div>
+    <div id="glowny">
+        <img src="lanzarotte.jpg" alt="galeria" id="obraz">
+    </div>
+    <div id="lewy">
+        <h3>Przeglądaj zdjęcia</h3>
+        <img src="lanzarotte.jpg" alt="lanzarotte" id="lanzarotte" onclick="lanzartotte()">
+        <img src="pekin.jpg" alt="pekin" id = "pekin" onclick="pekin()">
+        <img src="serengeti.jpg" alt="serengeti" id ="serengeti" onclick="serengeti()">
+        <img src="wenecja.jpg" alt="wenecja" id="wenecja" onclick="wenecja()">
+        <img src="tajlandia.jpg" alt="tajlandia" id="tajlandia" onclick="tajlandia()"">
+    </div>
+    <div id="prawy">
+        <h3>Obrazy w naszej galerii</h3>
+        <table>
+            <tr>
+                <td>Europa</td>
+                <td>Azja</td>
+                <td>Afryka</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>2</td>
+                <td>1</td>
+            </tr>
+        </table>
+        <p>
+            Polub nas <img src="icon-off.png" alt="">
+        </p>
+        <a href="https://pixabay.com " target="_blank">Odkryj więcej zdjęć</a>
+    </div>
+    <div id="stopka">
+        Autor: 1111111111
+    </div>
+    <script>
+        function lanzarotte(){
+            document.getElementById("obraz").src = "lanzarotte.jpg"
+        }
+        function lanzarotte(){
+            document.getElementById("obraz").src = "pekin.jpg"
+        }
+//         Obsługuje akcje wywoływane kliknięciem na zdjęciach z bloku lewego za pomocą języka JavaScript
+// ‒ Po kliknięciu na dowolnej miniaturze jest ona wyświetlona w bloku głównym (zamiast lanzarotte.jpg)
+// ‒ Po kliknięciu ikony icon-off.jpg jest ona podmieniana na ikonę icon-on.jpg. Po ponownym kliknięciu –
+// powraca do icon-off.jpg i tak na zmianę – realizowane za pomocą funkcji. 
+    </script>
+   </body>
+</html>

@@ -1,0 +1,53 @@
+
+
+‒ Dla przycisków zmieniających tło: kolor tła przycisku odpowiada jego podpisowi (np. kolor Indigo dla
+przycisku podpisanego Indigo)
+body{
+    font-family: Georgia;
+
+}
+div#bl{
+    background-color: maroon;
+    color: white;
+    width:30%;
+    height:600px;
+    float: left;
+}
+#bp{
+    background-color: maroon;
+    color:white;
+    height: 600px;
+    width: 70%;
+    overflow: auto;
+    float: left;
+}
+#stopka{
+    clear: both;
+    background-color: DimGray;
+    color:white;
+}
+img, ul{
+    float: left;
+    
+}
+img{
+    padding: 10px;
+    border: 1px solid white;
+}
+
+
+#lor{
+    clear: both;
+}
+p{
+    padding: 10px;
+}
+#i{
+    background-color: indigo;
+}
+#b{
+    background-color: steelblue;
+}
+#o{
+    background-color: olive;
+}

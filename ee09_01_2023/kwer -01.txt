@@ -1,0 +1,11 @@
+1. SELECT imie,nazwisko,adres,miasto,czyRODO, czyBadania FROM `pracownicy` WHERE id = 2
+
+
+2. SELECT count(*)  FROM pracownicy
+
+
+
+3. select id,imie,nazwisko from pracownicy where id =2
+4. SELECT p.id, s.nazwa, s.opis 
+FROM pracownicy as p , stanowiska as s 
+WHERE p.stanowiska_id = s.id and p.id = 2

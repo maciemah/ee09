@@ -1,0 +1,42 @@
+/* 
+
+
+
+
+ Dla listy numerowanej: punktor jako mała litera */
+*{
+    font-family: Arial;
+}
+#bl,#bs,#bp,#sl,#ss,#sp{
+    background-color: saddlebrown;
+    color:white;
+    height: 100px;
+    float: left;
+    }
+#bl,#sl{
+    width:55%;
+    font-size: 120%;
+}
+#bs,#ss{
+    width: 25%;
+}
+#bp,#sp{
+    width:20%;
+    text-align: right;
+}
+#bg{
+    background-color: snow;
+    padding: 70px;
+
+}
+a{
+    border:dotted 2px saddlebrown;
+    background-color: snow;
+    color: saddlebrown;
+    padding: 20px;
+    line-height: 100px;
+
+}
+ol{
+    list-style-type:lower-alpha;
+}

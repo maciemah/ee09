@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zamówienia hurtowe</title>
+    <link rel="stylesheet" href="styl4.css">
+</head>
+<body onload="braki()">
+  <div id="baner">
+      <h1>Sieci komputerowe</h1>
+  </div>
+  <div id="blewy">
+      <h2>
+        Aktualizacja i zamówienia materiałów
+      </h2>
+      <p>
+        Do wewnętrznego użytku firmy
+      </p>
+      <img src="obraz.png" alt="sieć komputerowa">
+  </div>
+  <div id="bprawy">
+      <table>
+          <tr>
+              <th>Produkt</th>
+              <th>Jednostka</th>
+              <th>Dostępna ilość</th>
+              <th>Aktualizuj</th>
+              <th>Zamówienie</th>
+          </tr>
+          <tr>
+              <td id="p1">Skrętka U/UTP drut</td>
+              <td>metr</td>
+              <td id="z1">0</td>
+              <td><input type="button" value="aktualizuj" class = "przycisk" onclick="aktualizuj1()"></td>
+              <td><input type="button" value="zamów" class = "przycisk" onclick="zamow()""></td>
+          </tr>
+          <tr>
+              <td>Skrętka U/UTP linka</td>
+              <td>metr</td>
+              <td id="z2">2</td>
+              <td><input type="button" value="aktualizuj" class = "przycisk" onclick="aktualizuj2()"></td>
+              <td><input type="button" value="zamów" class = "przycisk"></td>
+          </tr>
+          <tr>
+              <td>Wtyki 8P8C</td>
+              <td>sztuki</td>
+              <td id="z3">0</td>
+              <td><input type="button" value="aktualizuj" class = "przycisk" onclick="aktualizuj3()"></td>
+              <td><input type="button" value="zamów" class = "przycisk"></td>
+          </tr>
+          <tr>
+              <td>Moduły Keystone</td>
+              <td>sztuki</td>
+              <td id="z4">30</td>
+              <td><input type="button" value="aktualizuj" class = "przycisk" onclick="aktualizuj4()"></td>
+              <td><input type="button" value="zamów" class = "przycisk"></td>
+          </tr>
+      </table>
+  </div>
+  <div id="stopka">
+      <a href="http://sieci.pl" target="_blank">Nasza strona internetowa</a>
+      <p>
+        Stronę przygotował: 1111111111  
+      </p>
+  </div>
+  <script>
+      var id_zamowienia = 0
+      function braki(){
+        let  z1 = document.getElementById("z1").innerHTML; 
+        let  z2 = document.getElementById("z2").innerHTML; 
+        let  z3 = document.getElementById("z3").innerHTML; 
+        let  z4 = document.getElementById("z4").innerHTML; 
+        if (z1 == 0)
+        document.getElementById("z1").style.background = "red";
+        else if (z1>=1 && z1<=5)
+        document.getElementById("z1").style.background = "yellow";
+        else document.getElementById("z1").style.background = "Honeydew";
+        if (z2==0)
+        document.getElementById("z2").style.background = "red";
+        else if (z2>=1 && z2<=5)
+        document.getElementById("z2").style.background = "yellow";
+        else document.getElementById("z2").style.background = "Honeydew";
+        if (z3==0)
+        document.getElementById("z3").style.background = "red";
+        else if (z3>=1 && z3<=5)
+        document.getElementById("z3").style.background = "yellow";
+        else document.getElementById("z3").style.background = "Honeydew";
+        if (z4==0)
+        document.getElementById("z4").style.background = "red";
+        else if (z4>=1 && z4<=5)
+        document.getElementById("z4").style.background = "yellow";
+        else document.getElementById("z4").style.background = "Honeydew";
+      }
+      function aktualizuj1(){
+          if (z1 !="")
+          z1 = prompt("Podaj nową wartość")
+          document.getElementById("z1").innerHTML = z1
+          braki()
+      }
+
+        function aktualizuj2(){
+          if (z2 !="")
+          z2 = prompt("Podaj nową wartość")
+          document.getElementById("z2").innerHTML = z2
+          braki()
+      }
+      function aktualizuj3(){
+          if (z3 !="")
+          z3 = prompt("Podaj nową wartość")
+          document.getElementById("z3").innerHTML = z3
+          braki()
+      }
+      function aktualizuj4(){
+          if (z4 !="")
+          z4 = prompt("Podaj nową wartość")
+          document.getElementById("z4").innerHTML = z4
+          braki()
+      }
+      function zamow(){
+        let p1 = document.getElementById("p1").innerHTML;
+        alert("zamowienie nr: " + (id_zamowienia+1) + " Produkt: " + p1)
+        id_zamowienia +=1
+      }
+  </script>
+</body>
+</html>

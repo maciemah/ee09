@@ -1,0 +1,3 @@
+Zapytanie 1: select haslo from uzytkownicy where login ="Justyna"
+Zapytanie 2: select count(*) as ile from dane
+Zapytanie 3: SELECT uzytkownicy.login, dane.rok_urodz, dane.przyjaciol, dane.hobby, dane.zdjecie FROM dane,uzytkownicy WHERE uzytkownicy.login ="Justyna" and uzytkownicy.id = dane.id

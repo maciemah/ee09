@@ -1,0 +1,4 @@
+SELECT klienci.zdjecie, klienci.imie,opinie.opinia FROM klienci, opinie WHERE 
+klienci.id = opinie.Klienci_id 
+AND
+klienci.Typy_id ="2" or klienci.id="3"

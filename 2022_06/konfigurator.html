@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style w JavaScript</title>
+    <link rel="stylesheet" href="styl6.css">
+  
+    
+        
+    
+</head>
+<body>
+
+   <div id="bl">
+    <h1>Konfigurator stylu</h1>
+    <p>Podaj kolor tła</p>
+    <input type="button" value="Indigo" id="i" onclick="kolorindigo()">
+    <input type="button" value="SteelBlue" id = "b" onclick="kolorsteel()">
+    <input type="button" value="Olive" id="o" onclick="kolorolive()">
+    <p>Podaj kolor czcionki</p>
+    <select name="lista" id="lista" onchange="kolorki()">
+        <option value="White" id ="White" ">White</option>
+        <option value="Tan" id="Tan"">Tan</option>
+        <option value="Bisque" id="Bisque" ">Bisque</option>
+        <option value="Plum" id="Plum" ">Plum</option>
+    </select>
+    <p>Podaj rozmiar czcionki w procentach, np. 200%</p>
+    <input type="text" name="" id="rozmiar" placeholder="100%" onblur ="zmienrozmiar()">
+    <p>Czy rysunek ma mieć ramkę?</p>
+    <label><input type="checkbox" name="" id="ramka" checked onclick = "rysujramke()">Rysuj ramkę</label>
+    <p>Jaki jest typ punktora listy?</p>
+    <input type="radio" name="listy" id="dysk" checked onclick="zmianalisty()">dysk <br>
+    <input type="radio" name="listy" id="kwadrat" onclick="zmianalisty()">kwadrat <br>
+    <input type="radio" name="listy" id="okrag" onclick="zmianalisty()">okrąg <br>
+   </div> 
+   <div id="bp">
+    <img src="gibraltar.jpg" alt="półwysep Gibraltar" id="obrazek">
+    <ul id="listka">
+        <li>element 1</li>
+        <li>element 2</li>
+        <li>element 3</li>
+    </ul>
+    <p id="lor">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+ 
+   </div>
+   <div id="stopka">Autor: 11111111111</div>
+   <script>
+    function kolorindigo(){
+        let bp = document.getElementById("bp").style.background = "indigo";
+    }
+    function kolorsteel(){
+        let bp = document.getElementById("bp").style.background = "SteelBlue";
+    }
+    function kolorolive(){
+        let bp = document.getElementById("bp").style.background = "olive";
+    }
+    function zmienrozmiar(){
+        let rozmiar = document.getElementById("rozmiar").value;
+        document.getElementById("bp").style.fontSize =  rozmiar+"%";
+    }
+    function zmianalisty(){
+        let dysk = document.getElementById("dysk").checked;
+        let kwadrat = document.getElementById("kwadrat").checked;
+        let okrag = document.getElementById("okrag").checked;
+        if (dysk) document.getElementById("listka").style.listStyleType = "disc";
+        else if (kwadrat) document.getElementById("listka").style.listStyleType = "square";
+        else document.getElementById("listka").style.listStyleType = "circle"
+    }
+    function rysujramke(){
+        let ramka = document.getElementById("ramka").checked;
+        if (ramka) document.getElementById("obrazek").style.border = "1px solid white";
+        else document.getElementById("obrazek").style.border = "0px solid white";
+    }
+    function kolorki(){
+        let White = document.getElementById("White").selected;
+        let Tan = document.getElementById("Tan").selected;
+        let Bisque = document.getElementById("Bisque").selected;
+        let Plum = document.getElementById("Plum").selected;
+
+        if(White) document.getElementById("bp").style.color = 'White';
+        else if (Tan) document.getElementById("bp").style.color = 'Tan';
+        else if (Bisque) document.getElementById("bp").style.color = 'Bisque';
+        else  document.getElementById("bp").style.color = 'Plum';
+
+
+
+
+
+}
+
+</script>
+</body>
+</html>

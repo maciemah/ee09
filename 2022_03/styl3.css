@@ -1,0 +1,46 @@
+*{
+    font-family: Tahoma, sans-serif;
+}
+#baner{
+background-color: tomato;
+color: white;
+padding: 10px;
+}
+#glowny
+{
+    background-color: seashell;
+    height: 500px;
+    overflow: auto;
+}
+#s1, #s2, #s3, #s4{
+    background-color: tomato;
+    color:white;
+    width:25%;
+    height: 160px;
+    float: left;
+}
+.opinie{
+background-color: white;
+color: dimgray;
+width:60%;
+height: 220px;
+margin-top:40px;
+margin-bottom: 40px;
+margin-left: auto;
+margin-right: auto;
+box-shadow: 0px 0px 10px dimgray;
+}
+   
+
+/* 
+
+‒ Dla selektora obrazu: opływany tekstem po jego prawej stronie, marginesy zewnętrzne 10 px, rogi
+obrazu zaokrąglone o 10 px
+‒ Dla selektora cytatu: marginesy wewnętrzne 10 px, czcionka o rozmiarze 150%, pochylona
+‒ Dla selektorów nagłówka pierwszego i drugiego stopnia: wyrównanie tekstu do środka
+‒ Dla selektora nagłówka czwartego stopnia: wyrównanie tekstu do prawej strony, margines zewnętrzny
+prawy 40 px, czcionka o rozmiarze 150%, pochylona
+‒ Dla odnośnika: biały kolor czcionki
+Uwaga: style CSS dla obrazu, cytatu oraz nagłówków należy zdefiniować wyłącznie przy pomocy selektora
+dla znacznika obraz, cytat, nagłówek pierwszego, drugiego, czwartego stopnia. Jest to uwarunkowane
+projektem późniejszej rozbudowy witryny. */

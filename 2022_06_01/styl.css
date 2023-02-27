@@ -1,0 +1,47 @@
+body{
+    font-family:garamond,serif ;
+}
+#baner{
+    background-image: linear-gradient(to bottom,#97b498,#c8e6c9);
+    color: white;
+    text-align: center;
+    padding: 5px;
+
+}
+#bl{
+    background-color: #c8e6c9 ;
+    color: #005005;
+    width: 40%;
+    height:600px;
+    float: left;
+}
+#bp{
+    color: #005005;
+    width:60%;
+    height: 600px;
+    overflow: scroll;
+    float: left;
+}
+#stopka{
+    background-image: linear-gradient(to bottom,#c8e6c9,#97b498);
+    color: white;
+    padding: 12px;
+    clear:both;
+}
+video{
+width:100%;
+}
+
+form{
+    padding:10px 50px ;
+}
+
+input[type=submit]{
+    background-color: #97b498;
+    color:white;
+}
+input[type=submit]:hover{
+    background-color: white;
+    color: #97b498;
+}
+

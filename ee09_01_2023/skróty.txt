@@ -1,0 +1,18 @@
+Edycja:
+Ctrl + Z - Cofnij
+Ctrl + X lub F2 - Wytnij
+Ctrl + C lub F3 - Kopiuj
+Ctrl + V lub F4 - Wklej
+
+Zaznaczanie:
+Ctrl + T - Wolna transformacja
+Ctrl + D - Odznacz
+
+Warstwa:
+Ctrl + J - Duplikuj warstwę
+Ctrl + E - Połącz warstwy
+Shift + Ctrl + Alt + E - Połącz wszystkie warstwy
+
+Kolory:
+D - Reset kolorów (czarny i biały).
+X - Zamień kolor pierwszoplanowy z drugoplanowym
